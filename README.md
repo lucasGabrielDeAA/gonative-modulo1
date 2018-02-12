@@ -22,7 +22,7 @@ If you already have the application installed on your emulator and, did not had 
 yarn start
 ```
 
-#### Running the packager with the cache cleanded
+#### Running the packager with the cache cleaned
 
 ```
 yarn start --reset-cache
