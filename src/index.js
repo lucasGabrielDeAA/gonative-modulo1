@@ -64,6 +64,11 @@ export default class App extends Component {
           <Todo key={todo.id} title={todo.title} />
         ))}
         <Button title="Adicionar todo" onPress={this.addTodo} />
+        {/*<View style={styles.box} />
+        <View style={styles.box} />
+        <View style={styles.box} />
+        <View style={styles.box} />
+      <View style={styles.box} />*/}
       </View>
     );
   }
@@ -72,8 +77,15 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#333',
+    flexWrap: 'wrap',
     justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    alignItems: 'center'
+  },
+  box: {
+    width: 80,
+    height: 80,
+    backgroundColor: '#F00',
+    margin: 10
   }
 });
