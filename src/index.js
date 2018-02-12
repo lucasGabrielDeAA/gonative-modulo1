@@ -13,7 +13,6 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <Todo title="Fazer café" />
-        <Todo title={5} />
       </View>
     );
   }

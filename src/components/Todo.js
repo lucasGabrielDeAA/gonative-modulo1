@@ -13,6 +13,8 @@ class Todo extends Component {
         title: 'Todo standard title'
     };
     static propTypes = {
+        //Define o tipo da propriedade e se ela é obrigatória.
+        //Para teste, basta invocar um component do tipo Todo.js, passando um title que não seja do tipo string. e.g.: <Todo title={5} />
         title: PropTypes.string.isRequired
     };
     
