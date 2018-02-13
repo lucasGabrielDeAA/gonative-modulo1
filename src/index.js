@@ -7,7 +7,7 @@ import {
   Button
 } from 'react-native';
 
-//import './config/ReactotronConfig';
+import './config/ReactotronConfig';
 import './config/DevToolsConfig';
 
 import Todo from './components/Todo';
@@ -30,6 +30,7 @@ export default class App extends Component {
     */
   }
   componentDidMount() {
+    console.tron.log('Teste');
     /*  Better place to do API calls, get data from other services, or other changed to be displayed
         as soon as the component will be rendered.
     */
