@@ -8,7 +8,8 @@
     "ios": "react-native run-ios",
     "test": "node node_modules/jest/bin/jest.js --watch",
     "lint": "eslint app/",
-    "lint:fix": "eslint app/ --fix"
+    "lint:fix": "eslint app/ --fix",
+    "react-devtool": "react-devtools"
   },
   "dependencies": {
     "prop-types": "^15.6.0",
@@ -19,6 +20,7 @@
     "babel-jest": "22.2.2",
     "babel-preset-react-native": "4.0.0",
     "jest": "22.2.2",
+    "react-devtools": "^3.1.0",
     "react-test-renderer": "16.2.0",
     "reactotron-react-native": "^1.14.0"
   },
