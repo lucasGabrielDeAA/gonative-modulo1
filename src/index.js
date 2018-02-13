@@ -22,7 +22,7 @@ export default class App extends Component {
     });
   }
   componentWillMount() {
-    /*  Called when the component will mount, is not recommended to do changes in the state, 
+    /*  Called when the component will mount, is not recommended to do changes in the state,
         or API calls in this method.
     */
   }
@@ -52,7 +52,7 @@ export default class App extends Component {
     */
   }
   componentDidCatch(error, info) {
-    /*  This method is used to catch js exceptions, and treat this exceptions. Used to display alerts and other 
+    /*  This method is used to catch js exceptions, and treat this exceptions. Used to display alerts and other
         feedback's errors to user.
     */
   }
