@@ -7,6 +7,9 @@ import {
   Button
 } from 'react-native';
 
+//import './config/ReactotronConfig';
+import './config/DevToolsConfig';
+
 import Todo from './components/Todo';
 
 export default class App extends Component {
@@ -68,7 +71,7 @@ export default class App extends Component {
         <View style={styles.box} />
         <View style={styles.box} />
         <View style={styles.box} />
-      <View style={styles.box} />*/}
+        <View style={styles.box} />*/}
       </View>
     );
   }
