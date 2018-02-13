@@ -32,7 +32,7 @@ yarn start --reset-cache
 
 ## Using the react-devtools to inspect the application
 
-To install the [react-devtools]https://github.com/facebook/react-devtools run the command
+To install the [react-devtools](https://github.com/facebook/react-devtools) run the command
 
 ```
 yarn add react-devtools --dev
