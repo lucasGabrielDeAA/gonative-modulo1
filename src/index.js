@@ -1,23 +1,37 @@
 import React, { Component } from 'react';
 import {
-  Platform,
   StyleSheet,
-  Text,
   View,
-  Button
+  Button,
 } from 'react-native';
 
-import './config/ReactotronConfig';
-import './config/DevToolsConfig';
+import 'config/ReactotronConfig';
+import 'config/DevToolsConfig';
 
-import Todo from './components/Todo';
+import Todo from 'components/Todo';
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#333',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  box: {
+    width: 80,
+    height: 80,
+    backgroundColor: '#F00',
+    margin: 10
+  }
+});
 
 export default class App extends Component {
   state = {
     todos: [
       { id: 1, title: 'Fazer café' },
-      { id: 2, title: 'Estudar GoNative' }
-    ]
+      { id: 2, title: 'Estudar GoNative' },
+    ],
   };
   addTodo = () => {
     this.setState({
@@ -77,19 +91,3 @@ export default class App extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#333',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
-  box: {
-    width: 80,
-    height: 80,
-    backgroundColor: '#F00',
-    margin: 10
-  }
-});
