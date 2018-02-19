@@ -1,16 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-    View, Text, StyleSheet
-} from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
+    text: {
+        fontSize: 24
+    },
 
 });
 
 const Todo = ({ title }) => (
     <View>
-        <Text>{title}</Text>
+        <Text style={styles.text}>{title}</Text>
     </View>
 );
 
